@@ -1,0 +1,70 @@
+---
+title: "Welcome to Tidybiology"
+author:
+- name: Matthew Hirschey
+- name: Akshay Bareja
+  affiliation: Duke University
+  affiliation_url: https://duke.edu
+date: "`r Sys.Date()`"
+description: |
+  R and data science for biologists
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r meta, echo=FALSE}
+library(metathis)
+meta() %>%
+  meta_general(
+    description = "Make your teaching more robust & reproducible with R Markdown",
+    generator = "xaringan and remark.js"
+  ) %>% 
+  meta_name("github-repo" = "rstudio-education/teaching-in-production") %>% 
+  meta_social(
+    title = "Teaching in Production",
+    url = "https://rstd.io/tip",
+    image = "https://repository-images.githubusercontent.com/288797104/d13f1700-e2cc-11ea-9ed7-0bf3a41af1e4",
+    image_alt = "R Markdown hedgehog by Allison Horst",
+    og_type = "website",
+    twitter_card_type = "summary_large_image"
+  )
+```
+
+## Welcome to Tidybiology  
+
+This summer, we conducted a [+Data Science](https://plus.datascience.duke.edu/announcements/launch-covidds-series-june-30) class called *Counting COVID: Key elements of the analytical tool box for understanding COVID-19*. Below are the slides for this interactive presentation. To view the full-size slides in a new window, click on the *Slides* link below.
+
+```{r, fig.cap="[Slides](slides/index.html)"}
+knitr::include_url("slides/index.html")
+```
+
+\
+
+## Useful Links
+
+If you are new to R, we think you will find the following very useful: 
+
++ [R for Data Science](https://r4ds.had.co.nz)
+
++ [bespokeDS YouTube channel](https://www.youtube.com/channel/UCstAS6IpgYgZ9Cvcag_YlCQ)
+
+
+<aside> The R and Tidyverse online communities are very active, helpful, and welcoming. One of the best ways to learn new things is to follow the #rstats hashtag on Twitter. </aside>
+
+
+\
+
+## To view the slides in a new window, click on the link below
+
++ [Slides](slides/index.html)
+
+
+
+
+
+## Acknowledgments {.appendix}
+
+This website was modelled on a wonderfull Distill website made by [Alison Hill & Desirée De Leon](https://github.com/rstudio-education/teaching-in-production/blob/master/index.Rmd)
