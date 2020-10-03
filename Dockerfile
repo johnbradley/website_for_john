@@ -1,4 +1,4 @@
 FROM dukegcb/openshift-shiny-verse:4.0.2
-ADD . /srv/code/
-RUN chgrp -R 0 /srv/code && chmod -R g=u /srv/code
-RUN install2.r metathis distill
+ADD ./_site /srv/code
+RUN install2.r metathis distill learnr here ggrepel viridis gghighlight twitterwidget patchwork
+RUN Rscript -e 'devtools::install_github("matthewhirschey/bespokelearnr")'
